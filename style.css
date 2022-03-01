@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 246, 246);
+}
+footer {
+  margin-top: 50px;
+  color: #fff;
+  background-color: #f3f708;
+}
+/* Iconos de redes sociales footer*/
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #e60073;
+  box-shadow: 0 0 20px #e60073;
+}
+
+.icon:hover:nth-child(2) {
+  background-color: #1877f2;
+  box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366;
+}
+
+.icon:hover:nth-child(4) {
+  background-color: #00080e;
+  box-shadow: 0 0 20px #00080e;
+}
+
+.icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+}
+
+svg circle {
+  stroke-dasharray: 150;
+  transition: all 0.8s ease-in-out;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+}
+/* Menú */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f708;
+  padding-left: 2vw;
+}
+
+.cont-ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.5vw;
+  transition: all 0.3s ease 0s;
+}
+
+li:hover {
+  background-color: #4708f3;
+}
+
+.develop {
+  position: relative;
+}
+
+.ul-second {
+  display: none;
+  position: absolute;
+  margin-top: 1.5vw;
+}
+
+.ul-second > li {
+  width: 190px;
+  transform: translateX(-20px);
+  border-bottom: solid 1px #fff;
+  text-align: center;
+  background-color: #f3f708;
+}
+
+.ul-second > li:hover {
+  background-color: #4708f3;
+}
+
+.develop:hover > .ul-second {
+  display: block;
+}
+
+.ul-third {
+  position: absolute;
+  transform: translateX(100%);
+  right: 0;
+  top: 40%;
+  display: none;
+  background-color: #f3f708;
+}
+
+.ul-third > li {
+  padding: 1.5vw;
+  border-bottom: solid 1px #fff;
+}
+
+.front:hover > .ul-third {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .logo-danicodex {
+    display: none;
+  }
+}
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
